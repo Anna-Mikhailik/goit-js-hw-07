@@ -64,7 +64,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* ---2--- 
+/* ---2---*/
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +83,7 @@ body {
   height: 300px;
   object-fit: cover;
 }
-*/
+
 /* ---3--- */
 
 .text-field {

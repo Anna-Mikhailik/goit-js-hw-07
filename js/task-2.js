@@ -24,15 +24,7 @@ const images = [
     alt: "Lighthouse Coast Sea",
   },
 ];
-const gallery = document.querySelector(".gallery");
-gallery.style.display = "flex";
-gallery.style.gap = "20px";
 
-const galleryMarkup = images
-  .map(
-    ({ url, alt }) =>
-      `<li><img src="${url}" alt="${alt}" style="width: 100%; height: auto;"></li>`
-  )
-  .join("");
-
-gallery.insertAdjacentHTML("beforeend", galleryMarkup);
+const list = document.querySelector('.gallery');
+const items = images.map((image) => `<li class="item-image"><img class="image" src="${image.url}" alt="${image.alt}" /></li>`).join("");
+list.insertAdjacentHTML("beforeend", items);
